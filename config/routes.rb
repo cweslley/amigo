@@ -1,4 +1,28 @@
 Amigo::Application.routes.draw do
+  resources :coletamaterials
+
+
+  resources :instituicaos
+
+
+  resources :enderecos
+
+
+  resources :coleta
+
+
+  resources :eventos
+
+
+  resources :conta
+
+
+  resources :animals
+
+
+  resources :especies
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

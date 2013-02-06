@@ -1,0 +1,23 @@
+<h1>Listing especies</h1>
+
+<table>
+  <tr>
+    <th>Descricao</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @especies.each do |especy| %>
+  <tr>
+    <td><%= especy.descricao %></td>
+    <td><%= link_to 'Show', especy %></td>
+    <td><%= link_to 'Edit', edit_especy_path(especy) %></td>
+    <td><%= link_to 'Destroy', especy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Especie', new_especy_path %>

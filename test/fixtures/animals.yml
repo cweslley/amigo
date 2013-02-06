@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  raca: MyString
+  idade: 1
+  pelagem: MyString
+  descricao: MyString
+  especie_id: 1
+
+two:
+  raca: MyString
+  idade: 1
+  pelagem: MyString
+  descricao: MyString
+  especie_id: 1

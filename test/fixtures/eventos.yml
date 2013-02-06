@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  local: MyString
+  data: 2013-02-06
+  horario: MyString
+  descricao: MyString
+
+two:
+  local: MyString
+  data: 2013-02-06
+  horario: MyString
+  descricao: MyString

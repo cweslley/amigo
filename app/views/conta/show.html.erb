@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Banco:</b>
+  <%= @contum.banco %>
+</p>
+
+<p>
+  <b>Agencia:</b>
+  <%= @contum.agencia %>
+</p>
+
+<p>
+  <b>Conta:</b>
+  <%= @contum.conta %>
+</p>
+
+
+<%= link_to 'Edit', edit_contum_path(@contum) %> |
+<%= link_to 'Back', conta_path %>

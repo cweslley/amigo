@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @coletamaterial.descricao %>
+</p>
+
+<p>
+  <b>Instituicao:</b>
+  <%= @coletamaterial.instituicao_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_coletamaterial_path(@coletamaterial) %> |
+<%= link_to 'Back', coletamaterials_path %>
