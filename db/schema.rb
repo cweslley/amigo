@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130206130518) do
+ActiveRecord::Schema.define(:version => 20130214060012) do
 
   create_table "animals", :force => true do |t|
     t.string   "raca"
@@ -19,14 +19,12 @@ ActiveRecord::Schema.define(:version => 20130206130518) do
     t.string   "pelagem"
     t.string   "descricao"
     t.integer  "especie_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "coleta", :force => true do |t|
-    t.string   "descricao"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.string   "foto_file_name"
+    t.string   "foto_content_type"
+    t.integer  "foto_file_size"
+    t.datetime "foto_updated_at"
   end
 
   create_table "coletamaterials", :force => true do |t|

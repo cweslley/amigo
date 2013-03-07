@@ -25,6 +25,11 @@
   <%= @animal.especie_id %>
 </p>
 
+<p>
+  <b>Foto:</b>
+  <%= image_tag @animal.foto.url(:medium) %>
+</p>
+
 
 <%= link_to 'Edit', edit_animal_path(@animal) %> |
 <%= link_to 'Back', animals_path %>
