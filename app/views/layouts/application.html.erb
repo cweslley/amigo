@@ -7,6 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<p style="color: green"><%= flash[:notice] %></p>
+
+	<table>
+		<tr>
+			<td><%= link_to 'Animais', animals_path %></td>
+			<td><%= link_to 'Instituições', instituicaos_path %></td>
+			<td><%= link_to 'Eventos', eventos_path %></td>
+		</tr>
+	</table>
 
 <%= yield %>
 

@@ -1,35 +1,18 @@
-<h1>Listing instituicaos</h1>
+<h1>Instituições</h1>
 
-<table>
-  <tr>
-    <th>Cnpj</th>
-    <th>Nome</th>
-    <th>Telefone</th>
-    <th>Email</th>
-    <th>Login</th>
-    <th>Senha</th>
-    <th>Endereco</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @instituicaos.each do |instituicao| %>
-  <tr>
-    <td><%= instituicao.cnpj %></td>
-    <td><%= instituicao.nome %></td>
-    <td><%= instituicao.telefone %></td>
-    <td><%= instituicao.email %></td>
-    <td><%= instituicao.login %></td>
-    <td><%= instituicao.senha %></td>
-    <td><%= instituicao.endereco_id %></td>
-    <td><%= link_to 'Show', instituicao %></td>
-    <td><%= link_to 'Edit', edit_instituicao_path(instituicao) %></td>
-    <td><%= link_to 'Destroy', instituicao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
+<%= link_to 'Nova Instituicao', new_instituicao_path %>
+<br />
 <br />
 
-<%= link_to 'New Instituicao', new_instituicao_path %>
+<% @instituicaos.each do |instituicao| %>
+<br />
+    <%= link_to instituicao.nome, instituicao %>
+    <%= instituicao.endereco_id %><br />
+    <%= instituicao.telefone %><br />
+    <%= instituicao.email %><br />
+    <br />
+<% end %>
+
+
+
+

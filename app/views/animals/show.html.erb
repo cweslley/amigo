@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+
+<p>
+  <%= image_tag @animal.foto.url(:medium) %>
+  <%= @animal.descricao %>
+</p>
 
 <p>
   <b>Raca:</b>
@@ -16,20 +20,13 @@
 </p>
 
 <p>
-  <b>Descricao:</b>
-  <%= @animal.descricao %>
-</p>
-
-<p>
   <b>Especie:</b>
   <%= @animal.especie_id %>
 </p>
 
-<p>
-  <b>Foto:</b>
-  <%= image_tag @animal.foto.url(:medium) %>
-</p>
 
 
-<%= link_to 'Edit', edit_animal_path(@animal) %> |
-<%= link_to 'Back', animals_path %>
+
+<%= link_to 'Editar', edit_animal_path(@animal) %> |
+<%= link_to 'Voltar', animals_path %> |
+<%= link_to 'Excluir', @animal, method: :delete, data: { confirm: 'Are you sure?' } %>
