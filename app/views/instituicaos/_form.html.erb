@@ -35,10 +35,30 @@
     <%= f.label :senha %><br />
     <%= f.text_field :senha %>
   </div>
-  <div class="field">
-    <%= f.label :endereco_id %><br />
-    <%= f.number_field :endereco_id %>
+
+  <%= f.fields_for :endereco_attributes do |e| %>
+    <div class="field">
+    <%= e.label :bairro %><br />
+    <%= e.text_field :bairro %>
   </div>
+  <div class="field">
+    <%= e.label :cep %><br />
+    <%= e.text_field :cep %>
+  </div>
+  <div class="field">
+    <%= e.label :cidade %><br />
+    <%= e.text_field :cidade %>
+  </div>
+  <div class="field">
+    <%= e.label :estado %><br />
+    <%= e.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= e.label :complemento %><br />
+    <%= e.text_field :complemento %>
+  </div>
+  <% end %>
+
   <div class="actions">
     <%= f.submit %>
   </div>

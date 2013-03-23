@@ -6,8 +6,10 @@
 
 <% @instituicaos.each do |instituicao| %>
 <br />
-    <%= link_to instituicao.nome, instituicao %>
-    <%= instituicao.endereco_id %><br />
+    <%= link_to instituicao.nome, instituicao %><br />
+    <%= instituicao.endereco.complemento %>,
+    <%= instituicao.endereco.bairro %> - 
+    <%= instituicao.endereco.cidade  %>/<%= instituicao.endereco.estado  %><br />
     <%= instituicao.telefone %><br />
     <%= instituicao.email %><br />
     <br />

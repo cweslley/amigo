@@ -21,12 +21,18 @@
 
 <p>
   <b>Especie:</b>
-  <%= @animal.especie_id %>
+  <%= @animal.especie.descricao %>
 </p>
+
+<p>
+  <b>Instituição:</b>
+  <%= @animal.instituicao.nome %>
+</p>
+
 
 
 
 
 <%= link_to 'Editar', edit_animal_path(@animal) %> |
 <%= link_to 'Voltar', animals_path %> |
-<%= link_to 'Excluir', @animal, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Excluir', @animal, method: :delete, data: { confirm: 'Você tem certeza que deseja excluir este animal?' } %>

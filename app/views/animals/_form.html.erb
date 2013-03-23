@@ -27,9 +27,18 @@
     <%= f.label :descricao %><br />
     <%= f.text_field :descricao %>
   </div>
+
+
   <div class="field">
     <%= f.label :especie_id %><br />
-    <%= f.number_field :especie_id %>
+    <%= f.select :especie_id, @especies.collect { |e| [ e.descricao, e.id ] }, {:prompt => 'Selecione a Espécie'} %>
+  </div>
+
+    
+
+  <div class="field">
+    <%= f.label :instituicao_id %><br />
+    <%= f.select :instituicao_id, @instituicoes.collect { |i| [ i.nome, i.id ] }, {:prompt => 'Selecione a Instituição'} %>
   </div>
 
   

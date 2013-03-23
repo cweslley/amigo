@@ -32,9 +32,12 @@
 
 <p>
   <b>Endereco:</b>
-  <%= @instituicao.endereco_id %>
+  <%= @instituicao.endereco.complemento %>,
+    <%= @instituicao.endereco.bairro %> - 
+    <%= @instituicao.endereco.cidade  %>/<%= @instituicao.endereco.estado  %><br />
 </p>
 
 
 <%= link_to 'Edit', edit_instituicao_path(@instituicao) %> |
 <%= link_to 'Back', instituicaos_path %>
+<%= link_to 'Excluir', @instituicao, method: :delete, data: { confirm: 'Você tem certeza que deseja exculuir esta instuituição?' } %>

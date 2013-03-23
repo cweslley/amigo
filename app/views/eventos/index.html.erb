@@ -4,9 +4,9 @@
 <br />
 
 <% @eventos.each do |evento| %><br />
-    Descricao: <%= evento.descricao %><br />
+    Descricao: <%= link_to evento.descricao, evento %><br />
     Local: <%= evento.local %><br />
-    Data: <%= evento.data %><br />
+    Data: <%= evento.data.strftime("%d/%m/%Y") %><br />
     Horario: <%= evento.horario %><br />
     
     <%= link_to 'Editar', edit_evento_path(evento) %>

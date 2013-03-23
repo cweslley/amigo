@@ -25,7 +25,8 @@ class AnimalsController < ApplicationController
   # GET /animals/new.json
   def new
     @animal = Animal.new
-
+    @especies = Especie.all
+    @instituicoes = Instituicao.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @animal }
@@ -35,6 +36,8 @@ class AnimalsController < ApplicationController
   # GET /animals/1/edit
   def edit
     @animal = Animal.find(params[:id])
+    @especies = Especie.all
+    @instituicoes = Instituicao.all
   end
 
   # POST /animals

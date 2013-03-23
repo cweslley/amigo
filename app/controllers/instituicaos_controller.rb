@@ -25,7 +25,7 @@ class InstituicaosController < ApplicationController
   # GET /instituicaos/new.json
   def new
     @instituicao = Instituicao.new
-
+    @endereco = Endereco.new
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @instituicao }
@@ -35,13 +35,13 @@ class InstituicaosController < ApplicationController
   # GET /instituicaos/1/edit
   def edit
     @instituicao = Instituicao.find(params[:id])
+    @endereco = Endereco.find(@instituicao.endereco.id)
   end
 
   # POST /instituicaos
   # POST /instituicaos.json
   def create
     @instituicao = Instituicao.new(params[:instituicao])
-
     respond_to do |format|
       if @instituicao.save
         format.html { redirect_to @instituicao, notice: 'Instituicao was successfully created.' }
