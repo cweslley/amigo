@@ -1,4 +1,4 @@
-<%= form_for(@evento) do |f| %>
+<%= form_for(@evento, :html => { :multipart => true }) do |f| %>
   <% if @evento.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@evento.errors.count, "error") %> prohibited this evento from being saved:</h2>
@@ -26,6 +26,14 @@
   <div class="field">
     <%= f.label :descricao %><br />
     <%= f.text_field :descricao %>
+  </div>
+  <div class="field">
+    <%= f.label :instituicao_id %><br />
+    <%= f.select :instituicao_id, @instituicoes.collect { |i| [ i.nome, i.id ] }, {:prompt => 'Selecione a Instituição'} %>
+  </div>
+  <div class="field">
+    <%= f.label :foto %><br />
+    <%= f.file_field :foto %>
   </div>
   <div class="actions">
     <%= f.submit %>

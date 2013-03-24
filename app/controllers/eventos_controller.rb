@@ -25,7 +25,7 @@ class EventosController < ApplicationController
   # GET /eventos/new.json
   def new
     @evento = Evento.new
-
+    @instituicoes = Instituicao.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @evento }
@@ -35,6 +35,7 @@ class EventosController < ApplicationController
   # GET /eventos/1/edit
   def edit
     @evento = Evento.find(params[:id])
+    @instituicoes = Instituicao.all
   end
 
   # POST /eventos

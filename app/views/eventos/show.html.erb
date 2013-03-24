@@ -1,4 +1,8 @@
 <p>
+  <%= image_tag @evento.foto.url(:medium) %>
+</p>
+
+<p>
   <b>Local:</b>
   <%= @evento.local %>
 </p>
@@ -17,7 +21,10 @@
   <b>Descricao:</b>
   <%= @evento.descricao %>
 </p>
-
+<p>
+  <b>Instituição:</b>
+  <%= @evento.instituicao.nome %>
+</p>
 
 <%= link_to 'Editar', edit_evento_path(@evento) %> |
 <%= link_to 'Voltar', eventos_path %>

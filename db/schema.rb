@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130321183913) do
+ActiveRecord::Schema.define(:version => 20130324204049) do
 
   create_table "animals", :force => true do |t|
     t.string   "raca"
@@ -64,8 +64,13 @@ ActiveRecord::Schema.define(:version => 20130321183913) do
     t.date     "data"
     t.string   "horario"
     t.string   "descricao"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.integer  "instituicao_id"
+    t.string   "foto_file_name"
+    t.string   "foto_content_type"
+    t.integer  "foto_file_size"
+    t.datetime "foto_updated_at"
   end
 
   create_table "instituicaos", :force => true do |t|

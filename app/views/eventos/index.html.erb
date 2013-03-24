@@ -4,10 +4,12 @@
 <br />
 
 <% @eventos.each do |evento| %><br />
-    Descricao: <%= link_to evento.descricao, evento %><br />
+<%= link_to image_tag(evento.foto.url(:thumb)), evento %><br />
+    Descricao: <%= evento.descricao %><br />
     Local: <%= evento.local %><br />
     Data: <%= evento.data.strftime("%d/%m/%Y") %><br />
     Horario: <%= evento.horario %><br />
+    Instituição: <%= evento.instituicao.nome %><br />
     
     <%= link_to 'Editar', edit_evento_path(evento) %>
     <%= link_to 'Excluir', evento, method: :delete, data: { confirm: 'Are you sure?' } %>

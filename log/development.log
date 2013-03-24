@@ -33839,3 +33839,4341 @@ Served asset /instituicaos.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:24:17 -0300
 Served asset /application.js - 304 Not Modified (16ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (29.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateConta (20130206123405)
+Migrating to CreateAnimals (20130206123812)
+Migrating to CreateEventos (20130206124448)
+Migrating to CreateEspecies (20130206125309)
+Migrating to CreateEnderecos (20130206125953)
+Migrating to CreateInstituicaos (20130206130259)
+Migrating to CreateColetamaterials (20130206130518)
+Migrating to AddAttachmentFotoToAnimals (20130214060012)
+Migrating to AddInstituicaoIdToAnimal (20130321183913)
+Migrating to AddInstituicaoIdToEvento (20130324201621)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (40.0ms)[0m  [1mALTER TABLE "eventos" ADD COLUMN "instituicao_id" integer[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130324201621')
+  [1m[36m (28.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/eventos/new" for 127.0.0.1 at 2013-03-24 17:23:33 -0300
+Connecting to database specified by database.yml
+Processing by EventosController#new as HTML
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" [0m
+  Rendered eventos/_form.html.erb (156.0ms)
+  Rendered eventos/new.html.erb within layouts/application (369.0ms)
+Completed 200 OK in 1867ms (Views: 1313.1ms | ActiveRecord: 87.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:38 -0300
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /animals.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /conta.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /coleta.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /coletamaterials.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /enderecos.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /eventos.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /especies.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /instituicaos.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /animals.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /coleta.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /coletamaterials.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /conta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /enderecos.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:39 -0300
+Served asset /especies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:40 -0300
+Served asset /eventos.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:40 -0300
+Served asset /instituicaos.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:23:40 -0300
+Served asset /application.js - 304 Not Modified (82ms)
+
+
+Started GET "/eventos/new" for 127.0.0.1 at 2013-03-24 17:27:36 -0300
+Processing by EventosController#new as HTML
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" 
+  Rendered eventos/_form.html.erb (16.0ms)
+  Rendered eventos/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 143ms (Views: 140.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /animals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /especies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /instituicaos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /animals.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:37 -0300
+Served asset /coleta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:38 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:38 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:38 -0300
+Served asset /enderecos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:38 -0300
+Served asset /eventos.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:38 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:38 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:27:38 -0300
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started POST "/eventos" for 127.0.0.1 at 2013-03-24 17:27:55 -0300
+Processing by EventosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+eg492/9b1Se4Q/oILexqh6VInp6LGvCfVjzQuRfQMs=", "evento"=>{"local"=>"evento novo", "data(1i)"=>"2013", "data(2i)"=>"3", "data(3i)"=>"24", "horario"=>"", "descricao"=>"", "instituicao_id"=>"1"}, "commit"=>"Create Evento"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: instituicao_id):
+  app/controllers/eventos_controller.rb:44:in `new'
+  app/controllers/eventos_controller.rb:44:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (89.0ms)
+
+
+Started POST "/eventos" for 127.0.0.1 at 2013-03-24 17:28:23 -0300
+Processing by EventosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+eg492/9b1Se4Q/oILexqh6VInp6LGvCfVjzQuRfQMs=", "evento"=>{"local"=>"evento novo", "data(1i)"=>"2013", "data(2i)"=>"3", "data(3i)"=>"24", "horario"=>"", "descricao"=>"", "instituicao_id"=>"1"}, "commit"=>"Create Evento"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (114.0ms)[0m  INSERT INTO "eventos" ("created_at", "data", "descricao", "horario", "instituicao_id", "local", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", Sun, 24 Mar 2013 20:28:23 UTC +00:00], ["data", Sun, 24 Mar 2013], ["descricao", ""], ["horario", ""], ["instituicao_id", 1], ["local", "evento novo"], ["updated_at", Sun, 24 Mar 2013 20:28:23 UTC +00:00]]
+  [1m[36m (19.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/eventos/2
+Completed 302 Found in 167ms (ActiveRecord: 140.0ms)
+
+
+Started GET "/eventos/2" for 127.0.0.1 at 2013-03-24 17:28:23 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mEvento Load (3.0ms)[0m  SELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  Rendered eventos/show.html.erb within layouts/application (376.0ms)
+Completed 200 OK in 503ms (Views: 488.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /enderecos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /animals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /eventos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /instituicaos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:24 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:25 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:25 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:25 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:25 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:25 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:25 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:25 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:28:25 -0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:28:46 -0300
+Processing by EventosController#index as HTML
+  [1m[35mEvento Load (2.0ms)[0m  SELECT "eventos".* FROM "eventos" 
+  Rendered eventos/index.html.erb within layouts/application (164.0ms)
+Completed 500 Internal Server Error in 182ms
+
+ActionView::Template::Error (undefined method `nome' for nil:NilClass):
+    8:     Local: <%= evento.local %><br />
+    9:     Data: <%= evento.data.strftime("%d/%m/%Y") %><br />
+    10:     Horario: <%= evento.horario %><br />
+    11:     Instituição: <%= evento.instituicao.nome %><br />
+    12:     
+    13:     <%= link_to 'Editar', edit_evento_path(evento) %>
+    14:     <%= link_to 'Excluir', evento, method: :delete, data: { confirm: 'Are you sure?' } %>
+  app/views/eventos/index.html.erb:11:in `block in _app_views_eventos_index_html_erb__165629403_30348180'
+  app/views/eventos/index.html.erb:6:in `each'
+  app/views/eventos/index.html.erb:6:in `_app_views_eventos_index_html_erb__165629403_30348180'
+  app/controllers/eventos_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (83.0ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Processing by EventosController#index as HTML
+  [1m[36mEvento Load (1.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" [0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered eventos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 124ms (Views: 119.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /instituicaos.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:29:25 -0300
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /coleta.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /conta.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /enderecos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /eventos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:29:26 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (3.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateConta (20130206123405)
+Migrating to CreateAnimals (20130206123812)
+Migrating to CreateEventos (20130206124448)
+Migrating to CreateEspecies (20130206125309)
+Migrating to CreateEnderecos (20130206125953)
+Migrating to CreateInstituicaos (20130206130259)
+Migrating to CreateColetamaterials (20130206130518)
+Migrating to AddAttachmentFotoToAnimals (20130214060012)
+Migrating to AddInstituicaoIdToAnimal (20130321183913)
+Migrating to AddInstituicaoIdToEvento (20130324201621)
+Migrating to AddAttachmentFotoToEventos (20130324204049)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (2.0ms)[0m  [1mALTER TABLE "eventos" ADD COLUMN "foto_file_name" character varying(255)[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "eventos" ADD COLUMN "foto_content_type" character varying(255)
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "eventos" ADD COLUMN "foto_file_size" integer[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "eventos" ADD COLUMN "foto_updated_at" timestamp
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130324204049')[0m
+  [1m[35m (38.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:45:13 -0300
+Processing by EventosController#index as HTML
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" 
+  [1m[36mInstituicao Load (0.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1
+  Rendered eventos/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 310ms (Views: 270.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:13 -0300
+Served asset /coletamaterials.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:13 -0300
+Served asset /coleta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:13 -0300
+Served asset /application.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:13 -0300
+Served asset /animals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:13 -0300
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /eventos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /coletamaterials.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:14 -0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/eventos/1" for 127.0.0.1 at 2013-03-24 17:45:20 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvento Load (42.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered eventos/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (undefined method `foto' for nil:NilClass):
+    1: <p>
+    2:   <%= image_tag @animal.foto.url(:medium) %>
+    3:   <%= @animal.descricao %>
+    4: </p>
+    5: 
+  app/views/eventos/show.html.erb:2:in `_app_views_eventos_show_html_erb__412862385_26110020'
+  app/controllers/eventos_controller.rb:18:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (86.0ms)
+
+
+Started GET "/eventos/1" for 127.0.0.1 at 2013-03-24 17:45:52 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered eventos/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 92ms (Views: 88.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:52 -0300
+Served asset /animals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:52 -0300
+Served asset /coleta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:52 -0300
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:52 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:52 -0300
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /especies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /conta.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /especies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:53 -0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/fotos/medium/missing.png" for 127.0.0.1 at 2013-03-24 17:45:54 -0300
+
+ActionController::RoutingError (No route matches [GET] "/fotos/medium/missing.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/eventos/1/edit" for 127.0.0.1 at 2013-03-24 17:45:56 -0300
+Processing by EventosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" [0m
+  Rendered eventos/_form.html.erb (15.0ms)
+  Rendered eventos/edit.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 103ms (Views: 97.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:56 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:56 -0300
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /coleta.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /enderecos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /conta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /instituicaos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /coleta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /eventos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:57 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:45:58 -0300
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started PUT "/eventos/1" for 127.0.0.1 at 2013-03-24 17:47:52 -0300
+Processing by EventosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+eg492/9b1Se4Q/oILexqh6VInp6LGvCfVjzQuRfQMs=", "evento"=>{"local"=>"Praça Marechal Deodoro da Fonseca", "data(1i)"=>"2013", "data(2i)"=>"4", "data(3i)"=>"13", "horario"=>"8", "descricao"=>"As atividades envolvem a participação do público, a exposição de animais disponíveis para adoção, a aplicação de vacinas e outras.", "instituicao_id"=>"2", "foto"=>#<ActionDispatch::Http::UploadedFile:0x3693978 @original_filename="Eiffel Tower2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"evento[foto]\"; filename=\"Eiffel Tower2.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/ismaias/AppData/Local/Temp/RackMultipart20130324-3900-1lihtk3>>}, "commit"=>"Update Evento", "id"=>"1"}
+  [1m[35mEvento Load (2.0ms)[0m  SELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w20130324-3900-1vj7w5f"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w20130324-3900-1vj7w5f"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w20130324-3900-zy568d"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/Eiffel Tower220130324-3900-f3j38w20130324-3900-zy568d"
+  [1m[35m (1.0ms)[0m  UPDATE "eventos" SET "foto_file_name" = 'Eiffel_Tower2.jpg', "foto_content_type" = 'image/jpeg', "foto_file_size" = 495212, "foto_updated_at" = '2013-03-24 20:47:53.021279', "updated_at" = '2013-03-24 20:48:03.107856' WHERE "eventos"."id" = 1
+[paperclip] Saving attachments.
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/eventos/1
+Completed 302 Found in 10228ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/eventos/1" for 127.0.0.1 at 2013-03-24 17:48:03 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered eventos/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:03 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:03 -0300
+Served asset /animals.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:03 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:03 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:03 -0300
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:03 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:03 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /animals.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:04 -0300
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Processing by EventosController#index as HTML
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" 
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1
+  Rendered eventos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 90ms (Views: 85.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /eventos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:11 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /especies.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:12 -0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/eventos/2/edit" for 127.0.0.1 at 2013-03-24 17:48:15 -0300
+Processing by EventosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvento Load (2.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" 
+  Rendered eventos/_form.html.erb (11.0ms)
+  Rendered eventos/edit.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 101ms (Views: 95.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /animals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /coletamaterials.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /coleta.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /animals.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:16 -0300
+Served asset /coleta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:17 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:17 -0300
+Served asset /conta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:17 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:17 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:17 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:17 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:48:17 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started PUT "/eventos/2" for 127.0.0.1 at 2013-03-24 17:49:02 -0300
+Processing by EventosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+eg492/9b1Se4Q/oILexqh6VInp6LGvCfVjzQuRfQMs=", "evento"=>{"local"=>"holywood", "data(1i)"=>"2013", "data(2i)"=>"3", "data(3i)"=>"24", "horario"=>"", "descricao"=>"evento novo", "instituicao_id"=>"1", "foto"=>#<ActionDispatch::Http::UploadedFile:0x3e547f0 @original_filename="Hollywood.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"evento[foto]\"; filename=\"Hollywood.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/ismaias/AppData/Local/Temp/RackMultipart20130324-3900-k89gwj>>}, "commit"=>"Update Evento", "id"=>"2"}
+  [1m[36mEvento Load (1.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (1.0ms)[0m  BEGIN
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz20130324-3900-1vpyfqr"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz20130324-3900-1vpyfqr"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz20130324-3900-ojazm5"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/Hollywood20130324-3900-1l05qbz20130324-3900-ojazm5"
+  [1m[36m (1.0ms)[0m  [1mUPDATE "eventos" SET "local" = 'holywood', "descricao" = 'evento novo', "foto_file_name" = 'Hollywood.jpg', "foto_content_type" = 'image/jpeg', "foto_file_size" = 262701, "foto_updated_at" = '2013-03-24 20:49:02.524254', "updated_at" = '2013-03-24 20:49:05.990453' WHERE "eventos"."id" = 2[0m
+[paperclip] Saving attachments.
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/eventos/2
+Completed 302 Found in 3647ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/eventos/2" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvento Load (1.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1
+  Rendered eventos/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 86ms (Views: 82.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Served asset /animals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:06 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:07 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:49:10 -0300
+Processing by EventosController#index as HTML
+  [1m[36mEvento Load (1.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" [0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  Rendered eventos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 125ms (Views: 120.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:10 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:10 -0300
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /coleta.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /coleta.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:11 -0300
+Served asset /eventos.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:12 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:49:12 -0300
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:49:53 -0300
+Processing by EventosController#index as HTML
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" 
+  Rendered eventos/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined local variable or method `animal' for #<#<Class:0x3c60c78>:0x3ef66b8>):
+    4: <br />
+    5: 
+    6: <% @eventos.each do |evento| %><br />
+    7: <%= link_to image_tag(animal.foto.url(:thumb)), animal %></td>
+    8:     Descricao: <%= link_to evento.descricao, evento %><br />
+    9:     Local: <%= evento.local %><br />
+    10:     Data: <%= evento.data.strftime("%d/%m/%Y") %><br />
+  app/views/eventos/index.html.erb:7:in `block in _app_views_eventos_index_html_erb__165629403_33023604'
+  app/views/eventos/index.html.erb:6:in `each'
+  app/views/eventos/index.html.erb:6:in `_app_views_eventos_index_html_erb__165629403_33023604'
+  app/controllers/eventos_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (86.0ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:50:05 -0300
+Processing by EventosController#index as HTML
+  [1m[36mEvento Load (2.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" [0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1
+  [1m[36mInstituicao Load (2.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  Rendered eventos/index.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 139ms (Views: 133.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /coleta.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /animals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /enderecos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:06 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:07 -0300
+Served asset /eventos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:07 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:07 -0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:50:31 -0300
+Processing by EventosController#index as HTML
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" 
+  [1m[36mInstituicao Load (0.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1
+  Rendered eventos/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 133ms (Views: 129.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:31 -0300
+Served asset /application.css - 304 Not Modified (177ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:31 -0300
+Served asset /animals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:31 -0300
+Served asset /coleta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:31 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:31 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:31 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /eventos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /instituicaos.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:50:32 -0300
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:51:04 -0300
+Processing by EventosController#index as HTML
+  [1m[36mEvento Load (2.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" [0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  Rendered eventos/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 97ms (Views: 91.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:04 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:04 -0300
+Served asset /application.css - 304 Not Modified (51ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:04 -0300
+Served asset /coleta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /coletamaterials.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /especies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /instituicaos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /animals.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /especies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:05 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:06 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/eventos/1" for 127.0.0.1 at 2013-03-24 17:51:07 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered eventos/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 89ms (Views: 85.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /animals.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /coleta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /especies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:08 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:09 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:09 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:09 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:09 -0300
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/eventos/2" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  Rendered eventos/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 127ms (Views: 123.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /animals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /coleta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /conta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /instituicaos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:12 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /coleta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /conta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /eventos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:13 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 17:51:32 -0300
+Processing by EventosController#index as HTML
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" 
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1
+  Rendered eventos/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 94ms (Views: 89.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /coleta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /animals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /especies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /instituicaos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /animals.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /coleta.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:33 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:34 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:34 -0300
+Served asset /especies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:34 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:34 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:34 -0300
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/instituicaos" for 127.0.0.1 at 2013-03-24 17:51:35 -0300
+Processing by InstituicaosController#index as HTML
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" [0m
+  [1m[35mEndereco Load (2.0ms)[0m  SELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = 1 LIMIT 1[0m
+  Rendered instituicaos/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 136ms (Views: 125.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /animals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /especies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /instituicaos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:36 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:37 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:37 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:37 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:37 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:37 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:37 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:37 -0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2013-03-24 17:51:42 -0300
+[paperclip] Duplicate path for foto with :rails_root/public:url. This will clash with attachment defined in Evento class
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (2.0ms)[0m  SELECT "animals".* FROM "animals" 
+  Rendered animals/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 136ms (Views: 98.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /coleta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /instituicaos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:43 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:44 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:44 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:44 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:44 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:44 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:44 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:44 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/fotos/medium/missing.png" for 127.0.0.1 at 2013-03-24 17:51:44 -0300
+
+ActionController::RoutingError (No route matches [GET] "/fotos/medium/missing.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/animals/7" for 127.0.0.1 at 2013-03-24 17:51:48 -0300
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mAnimal Load (2.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", "7"]]
+  [1m[35mEspecie Load (3.0ms)[0m  SELECT "especies".* FROM "especies" WHERE "especies"."id" = 3 LIMIT 1
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  Rendered animals/show.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 158ms (Views: 147.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:48 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:48 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:48 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:48 -0300
+Served asset /enderecos.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:48 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /coleta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /especies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /instituicaos.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /coleta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /enderecos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /especies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:49 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:51:50 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/fotos/medium/missing.png" for 127.0.0.1 at 2013-03-24 17:51:50 -0300
+
+ActionController::RoutingError (No route matches [GET] "/fotos/medium/missing.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/animals/7/edit" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mAnimal Load (1.0ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1  [["id", "7"]]
+  [1m[36mEspecie Load (1.0ms)[0m  [1mSELECT "especies".* FROM "especies" [0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" 
+  Rendered animals/_form.html.erb (11.0ms)
+  Rendered animals/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 141ms (Views: 134.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Served asset /animals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Served asset /coleta.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Served asset /conta.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Served asset /enderecos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:56 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /instituicaos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /animals.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /enderecos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:54:57 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/animals/7/edit" for 127.0.0.1 at 2013-03-24 17:54:59 -0300
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", "7"]]
+  [1m[35mEspecie Load (1.0ms)[0m  SELECT "especies".* FROM "especies" 
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" [0m
+  Rendered animals/_form.html.erb (8.0ms)
+  Rendered animals/edit.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 99ms (Views: 92.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /animals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /eventos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /coleta.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /conta.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:00 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:01 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:01 -0300
+Served asset /instituicaos.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:01 -0300
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started PUT "/animals/7" for 127.0.0.1 at 2013-03-24 17:55:12 -0300
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+eg492/9b1Se4Q/oILexqh6VInp6LGvCfVjzQuRfQMs=", "animal"=>{"raca"=>"", "idade"=>"", "pelagem"=>"", "descricao"=>"", "especie_id"=>"3", "instituicao_id"=>"1", "foto"=>#<ActionDispatch::Http::UploadedFile:0x4a92470 @original_filename="imgres.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"animal[foto]\"; filename=\"imgres.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/ismaias/AppData/Local/Temp/RackMultipart20130324-3900-1gk52yz>>}, "commit"=>"Update Animal", "id"=>"7"}
+  [1m[35mAnimal Load (1.0ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1  [["id", "7"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu20130324-3900-1wo20dm"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu20130324-3900-1wo20dm"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu20130324-3900-1ti7bm"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/imgres20130324-3900-1jntxgu20130324-3900-1ti7bm"
+  [1m[35m (1.0ms)[0m  UPDATE "animals" SET "foto_file_name" = 'imgres.jpg', "foto_content_type" = 'image/jpeg', "foto_file_size" = 4493, "foto_updated_at" = '2013-03-24 20:55:12.711428', "updated_at" = '2013-03-24 20:55:19.402810' WHERE "animals"."id" = 7
+[paperclip] Saving attachments.
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/animals/7
+Completed 302 Found in 6849ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/animals/7" for 127.0.0.1 at 2013-03-24 17:55:19 -0300
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mAnimal Load (1.0ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1  [["id", "7"]]
+  [1m[36mEspecie Load (1.0ms)[0m  [1mSELECT "especies".* FROM "especies" WHERE "especies"."id" = 3 LIMIT 1[0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1
+  Rendered animals/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 89ms (Views: 83.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:19 -0300
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:19 -0300
+Served asset /animals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /conta.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /coleta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /instituicaos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /especies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /eventos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:20 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:21 -0300
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2013-03-24 17:55:25 -0300
+Processing by AnimalsController#index as HTML
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" [0m
+  Rendered animals/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 132ms (Views: 128.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /animals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /conta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /eventos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /animals.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:26 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:27 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:27 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:27 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:27 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:27 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:27 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:27 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/fotos/medium/missing.png" for 127.0.0.1 at 2013-03-24 17:55:27 -0300
+
+ActionController::RoutingError (No route matches [GET] "/fotos/medium/missing.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/animals/8" for 127.0.0.1 at 2013-03-24 17:55:29 -0300
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mAnimal Load (1.0ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1  [["id", "8"]]
+  Rendered animals/show.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `descricao' for nil:NilClass):
+    21: 
+    22: <p>
+    23:   <b>Especie:</b>
+    24:   <%= @animal.especie.descricao %>
+    25: </p>
+    26: 
+    27: <p>
+  app/views/animals/show.html.erb:24:in `_app_views_animals_show_html_erb__987792015_51823596'
+  app/controllers/animals_controller.rb:18:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (79.0ms)
+
+
+Started GET "/animals/9" for 127.0.0.1 at 2013-03-24 17:55:36 -0300
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", "9"]]
+  [1m[35mEspecie Load (0.0ms)[0m  SELECT "especies".* FROM "especies" WHERE "especies"."id" = 2 LIMIT 1
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered animals/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 124ms (Views: 121.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /animals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /coleta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /instituicaos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /conta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:37 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:38 -0300
+Served asset /eventos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:38 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:38 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/fotos/medium/missing.png" for 127.0.0.1 at 2013-03-24 17:55:38 -0300
+
+ActionController::RoutingError (No route matches [GET] "/fotos/medium/missing.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/animals/9/edit" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mAnimal Load (1.0ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1  [["id", "9"]]
+  [1m[36mEspecie Load (0.0ms)[0m  [1mSELECT "especies".* FROM "especies" [0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" 
+  Rendered animals/_form.html.erb (8.0ms)
+  Rendered animals/edit.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 98ms (Views: 92.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Served asset /animals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Served asset /application.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Served asset /coleta.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Served asset /conta.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:40 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /instituicaos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /animals.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /coleta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /conta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:55:41 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started PUT "/animals/9" for 127.0.0.1 at 2013-03-24 17:55:57 -0300
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+eg492/9b1Se4Q/oILexqh6VInp6LGvCfVjzQuRfQMs=", "animal"=>{"raca"=>"", "idade"=>"", "pelagem"=>"", "descricao"=>"", "especie_id"=>"2", "instituicao_id"=>"2", "foto"=>#<ActionDispatch::Http::UploadedFile:0x3ae8b20 @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"animal[foto]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/ismaias/AppData/Local/Temp/RackMultipart20130324-3900-gim5lb>>}, "commit"=>"Update Animal", "id"=>"9"}
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", "9"]]
+  [1m[35m (1.0ms)[0m  BEGIN
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq33.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq33.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq33.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq33.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq3320130324-3900-12gs1mn"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq3320130324-3900-12gs1mn"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq33.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq33.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq33.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq33.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq3320130324-3900-1n2dw0e"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/220130324-3900-1sqeq3320130324-3900-1n2dw0e"
+  [1m[36m (1.0ms)[0m  [1mUPDATE "animals" SET "foto_file_name" = '2.jpg', "foto_content_type" = 'image/jpeg', "foto_file_size" = 11798, "foto_updated_at" = '2013-03-24 20:55:57.563993', "updated_at" = '2013-03-24 20:55:59.712116' WHERE "animals"."id" = 9[0m
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/animals/9
+Completed 302 Found in 2306ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/animals/9" for 127.0.0.1 at 2013-03-24 17:55:59 -0300
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", "9"]]
+  [1m[35mEspecie Load (1.0ms)[0m  SELECT "especies".* FROM "especies" WHERE "especies"."id" = 2 LIMIT 1
+  [1m[36mInstituicao Load (0.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered animals/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /coleta.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /conta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /eventos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:00 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:01 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:01 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:01 -0300
+Served asset /especies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:01 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:01 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:01 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (1.0ms)[0m  SELECT "animals".* FROM "animals" 
+  Rendered animals/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 131ms (Views: 128.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Served asset /coleta.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Served asset /enderecos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:05 -0300
+Served asset /eventos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /coleta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /enderecos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /especies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:06 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/fotos/medium/missing.png" for 127.0.0.1 at 2013-03-24 17:56:07 -0300
+
+ActionController::RoutingError (No route matches [GET] "/fotos/medium/missing.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/animals/8" for 127.0.0.1 at 2013-03-24 17:56:28 -0300
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mAnimal Load (5.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", "8"]]
+  [1m[35mEspecie Load (1.0ms)[0m  SELECT "especies".* FROM "especies" WHERE "especies"."id" = 2 LIMIT 1
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered animals/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 129ms (Views: 119.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:28 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /animals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /coleta.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /conta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /especies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /instituicaos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /animals.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:29 -0300
+Served asset /eventos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:30 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:30 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/fotos/medium/missing.png" for 127.0.0.1 at 2013-03-24 17:56:30 -0300
+
+ActionController::RoutingError (No route matches [GET] "/fotos/medium/missing.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/animals/8/edit" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mAnimal Load (1.0ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1  [["id", "8"]]
+  [1m[36mEspecie Load (1.0ms)[0m  [1mSELECT "especies".* FROM "especies" [0m
+  [1m[35mInstituicao Load (0.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" 
+  Rendered animals/_form.html.erb (9.0ms)
+  Rendered animals/edit.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 99ms (Views: 92.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Served asset /animals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Served asset /coleta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Served asset /coletamaterials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Served asset /conta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:32 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /instituicaos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /animals.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /coletamaterials.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /enderecos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /especies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /eventos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:33 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started PUT "/animals/8" for 127.0.0.1 at 2013-03-24 17:56:45 -0300
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+eg492/9b1Se4Q/oILexqh6VInp6LGvCfVjzQuRfQMs=", "animal"=>{"raca"=>"", "idade"=>"", "pelagem"=>"", "descricao"=>"", "especie_id"=>"2", "instituicao_id"=>"2", "foto"=>#<ActionDispatch::Http::UploadedFile:0x62da890 @original_filename="1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"animal[foto]\"; filename=\"1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/ismaias/AppData/Local/Temp/RackMultipart20130324-3900-ktxeo>>}, "commit"=>"Update Animal", "id"=>"8"}
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", "8"]]
+  [1m[35m (1.0ms)[0m  BEGIN
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb.jpg[0]" -auto-orient -resize "300x300>" "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb20130324-3900-mn0eyd"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb20130324-3900-mn0eyd"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb.jpg[0]"
+Command :: identify -format %m "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb.jpg[0]"
+Command :: convert "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb.jpg[0]" -auto-orient -resize "100x100>" "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb20130324-3900-1vl1txj"
+Command :: file -b --mime "C:/Users/ismaias/AppData/Local/Temp/120130324-3900-nafrlb20130324-3900-1vl1txj"
+  [1m[36m (1.0ms)[0m  [1mUPDATE "animals" SET "foto_file_name" = '1.jpg', "foto_content_type" = 'image/jpeg', "foto_file_size" = 5887, "foto_updated_at" = '2013-03-24 20:56:45.964762', "updated_at" = '2013-03-24 20:56:48.408901' WHERE "animals"."id" = 8[0m
+[paperclip] Saving attachments.
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/animals/8
+Completed 302 Found in 2657ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/animals/8" for 127.0.0.1 at 2013-03-24 17:56:48 -0300
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", "8"]]
+  [1m[35mEspecie Load (0.0ms)[0m  SELECT "especies".* FROM "especies" WHERE "especies"."id" = 2 LIMIT 1
+  [1m[36mInstituicao Load (0.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered animals/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:48 -0300
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:48 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /coleta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /coletamaterials.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /especies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /eventos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /animals.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /coleta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /eventos.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:49 -0300
+Served asset /instituicaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:50 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (2.0ms)[0m  SELECT "animals".* FROM "animals" 
+  Rendered animals/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 136ms (Views: 132.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Served asset /animals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Served asset /coleta.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Served asset /conta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Served asset /enderecos.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:52 -0300
+Served asset /eventos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /instituicaos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /coleta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /conta.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /especies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /eventos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /instituicaos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 17:56:53 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/a" for 192.168.2.6 at 2013-03-24 18:00:19 -0300
+
+ActionController::RoutingError (No route matches [GET] "/a"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/an" for 192.168.2.6 at 2013-03-24 18:00:22 -0300
+
+ActionController::RoutingError (No route matches [GET] "/an"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/anim" for 192.168.2.6 at 2013-03-24 18:00:22 -0300
+
+ActionController::RoutingError (No route matches [GET] "/anim"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/animal" for 192.168.2.6 at 2013-03-24 18:00:25 -0300
+
+ActionController::RoutingError (No route matches [GET] "/animal"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/animals" for 192.168.2.6 at 2013-03-24 18:00:26 -0300
+Processing by AnimalsController#index as HTML
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" [0m
+  Rendered animals/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 130ms (Views: 126.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:31 -0300
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:36 -0300
+Served asset /coleta.css - 200 OK (2ms)
+
+
+Started GET "/assets/animals.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:36 -0300
+Served asset /animals.css - 200 OK (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:36 -0300
+Served asset /coletamaterials.css - 200 OK (2ms)
+
+
+Started GET "/assets/conta.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:36 -0300
+Served asset /conta.css - 200 OK (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:36 -0300
+Served asset /enderecos.css - 200 OK (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:36 -0300
+Served asset /especies.css - 200 OK (1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:41 -0300
+Served asset /eventos.css - 200 OK (10ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:41 -0300
+Served asset /instituicaos.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:41 -0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.2.6 at 2013-03-24 18:00:41 -0300
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/animals.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:41 -0300
+Served asset /animals.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:41 -0300
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:46 -0300
+Served asset /coleta.js - 200 OK (2ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:46 -0300
+Served asset /coletamaterials.js - 200 OK (1ms)
+
+
+Started GET "/assets/conta.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:46 -0300
+Served asset /conta.js - 200 OK (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:46 -0300
+Served asset /especies.js - 200 OK (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:46 -0300
+Served asset /enderecos.js - 200 OK (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:46 -0300
+Served asset /eventos.js - 200 OK (1ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:50 -0300
+Served asset /instituicaos.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.2.6 at 2013-03-24 18:00:50 -0300
+Served asset /application.js - 200 OK (13ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 192.168.2.6 at 2013-03-24 18:01:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/apple-touch-icon.png" for 192.168.2.6 at 2013-03-24 18:01:05 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/instituicaos" for 192.168.2.6 at 2013-03-24 18:01:13 -0300
+Processing by InstituicaosController#index as HTML
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" 
+  [1m[36mEndereco Load (1.0ms)[0m  [1mSELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = 1 LIMIT 1
+  Rendered instituicaos/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 121ms (Views: 117.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 192.168.2.6 at 2013-03-24 18:01:18 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/eventos" for 192.168.2.6 at 2013-03-24 18:01:22 -0300
+Processing by EventosController#index as HTML
+  [1m[36mEvento Load (1.0ms)[0m  [1mSELECT "eventos".* FROM "eventos" [0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1[0m
+  Rendered eventos/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 102ms (Views: 97.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/apple-touch-icon.png" for 192.168.2.6 at 2013-03-24 18:01:23 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 192.168.2.6 at 2013-03-24 18:01:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/eventos/1" for 192.168.2.6 at 2013-03-24 18:01:35 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" WHERE "eventos"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  Rendered eventos/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/apple-touch-icon.png" for 192.168.2.6 at 2013-03-24 18:01:37 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 192.168.2.6 at 2013-03-24 18:01:44 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/apple-touch-icon.png" for 192.168.2.6 at 2013-03-24 18:01:49 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/animals" for 192.168.2.6 at 2013-03-24 18:01:50 -0300
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (1.0ms)[0m  SELECT "animals".* FROM "animals" 
+  Rendered animals/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 192.168.2.6 at 2013-03-24 18:02:09 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/apple-touch-icon.png" for 192.168.2.6 at 2013-03-24 18:02:13 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/instituicaos" for 127.0.0.1 at 2013-03-24 18:04:18 -0300
+Processing by InstituicaosController#index as HTML
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" [0m
+  [1m[35mEndereco Load (1.0ms)[0m  SELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = 1 LIMIT 1[0m
+  Rendered instituicaos/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 89ms (Views: 85.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:18 -0300
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /animals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /coleta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /eventos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /instituicaos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:19 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:20 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:20 -0300
+Served asset /application.js - 304 Not Modified (49ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2013-03-24 18:04:26 -0300
+Processing by EventosController#index as HTML
+  [1m[35mEvento Load (1.0ms)[0m  SELECT "eventos".* FROM "eventos" 
+  [1m[36mInstituicao Load (1.0ms)[0m  [1mSELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 2 LIMIT 1[0m
+  [1m[35mInstituicao Load (1.0ms)[0m  SELECT "instituicaos".* FROM "instituicaos" WHERE "instituicaos"."id" = 1 LIMIT 1
+  Rendered eventos/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 109ms (Views: 104.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:26 -0300
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:26 -0300
+Served asset /coleta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:26 -0300
+Served asset /animals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /coletamaterials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /enderecos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /conta.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /especies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /instituicaos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /animals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /coleta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /coletamaterials.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /enderecos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /especies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /instituicaos.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 18:04:27 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-24 18:11:51 -0300
+Processing by AnimalsController#index as HTML
+  [1m[36mAnimal Load (1.0ms)[0m  [1mSELECT "animals".* FROM "animals" [0m
+  Rendered animals/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 138ms (Views: 102.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:51 -0300
+Served asset /animals.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:51 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:51 -0300
+Served asset /conta.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coleta.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:51 -0300
+Served asset /coleta.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coletamaterials.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:51 -0300
+Served asset /coletamaterials.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:51 -0300
+Served asset /enderecos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/especies.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /especies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /eventos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /instituicaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /animals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/coleta.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /coleta.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/coletamaterials.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /coletamaterials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /conta.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/enderecos.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /enderecos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/especies.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /especies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /eventos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instituicaos.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /instituicaos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 18:11:52 -0300
+Served asset /application.js - 304 Not Modified (16ms)
